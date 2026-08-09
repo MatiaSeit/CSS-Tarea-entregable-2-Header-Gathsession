@@ -1,2 +1,24 @@
+* {
+  box-sizing: border-box;
+}
 
-// ...puedes agregar más estilos para body aquí...
+body {
+  margin: 0;
+  background-color: $dark;
+  font-family: $font-body;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,54 @@
+// ====== Fila de servicios (Build Community / Share Events / Get Information) ======
+.services {
+  position: absolute;
+  left: fx(160);
+  top: fx(899);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: fx(48);
+}
+
+.services__link {
+  display: flex;
+  align-items: center;
+  gap: fx(16);
+}
+
+.services__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: fx(64);
+  height: fx(64);
+  border-radius: fx(16);
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: background-color $transition, transform $transition;
+
+  img {
+    width: fx(40);
+    height: fx(40);
+  }
+}
+
+.services__text {
+  font-family: $font-body;
+  font-weight: 600;
+  font-size: fx(18);
+  line-height: fx(27);
+  color: $white;
+  transition: color $transition;
+}
+
+.services__link:hover,
+.services__link:focus-visible {
+  .services__icon {
+    background-color: rgba(255, 255, 255, 0.18);
+    transform: translateY(fx(-2));
+  }
+
+  .services__text {
+    color: $accent;
+  }
+}

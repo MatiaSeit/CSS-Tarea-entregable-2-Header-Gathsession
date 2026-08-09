@@ -1,0 +1,58 @@
+// ====== Collage de fotos (bento grid) ======
+.gallery {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.gallery__item {
+  position: absolute;
+  overflow: hidden;
+  border-radius: fx(90);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.gallery__item--1 {
+  left: fx(1520);
+  top: fx(310);
+  width: fx(240);
+  height: fx(509);
+  background-color: #f4b840;
+}
+
+.gallery__item--2 {
+  left: fx(976);
+  top: fx(174);
+  width: fx(240);
+  height: fx(509);
+  background-color: #6e1fed;
+}
+
+.gallery__item--3 {
+  left: fx(976);
+  top: fx(715);
+  width: fx(240);
+  height: fx(240);
+  background-color: #db2a6b;
+}
+
+.gallery__item--4 {
+  left: fx(1248);
+  top: fx(446);
+  width: fx(240);
+  height: fx(509);
+  background-color: #ff7e29;
+}
+
+.gallery__item--5 {
+  left: fx(1248);
+  top: fx(174);
+  width: fx(240);
+  height: fx(240);
+  background-color: #60d3d9;
+}

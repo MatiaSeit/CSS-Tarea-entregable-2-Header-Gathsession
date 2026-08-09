@@ -1,0 +1,62 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: fx(120);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 fx(160);
+}
+
+.navbar__logo {
+  margin: 0;
+  font-family: $font-heading;
+  font-weight: 700;
+  font-size: fx(36);
+  color: $white;
+  white-space: nowrap;
+}
+
+.navbar__logo-accent {
+  color: $accent;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: fx(48);
+
+  a {
+    position: relative;
+    font-family: $font-body;
+    font-size: fx(18);
+    color: $gray-nav;
+    transition: color $transition;
+
+    &.is-active {
+      color: $white;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: calc(100% + #{fx(8)});
+        transform: translateX(-50%);
+        width: fx(32);
+        height: fx(4);
+        background-color: $accent;
+        border-radius: fx(6);
+      }
+    }
+
+    // el hover se declara después de .is-active para que gane la cascada
+    // incluso sobre el link activo (Home), que si no se quedaba sin feedback
+    &:hover,
+    &:focus-visible {
+      color: $accent;
+    }
+  }
+}

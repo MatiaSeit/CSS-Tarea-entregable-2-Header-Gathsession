@@ -1,0 +1,130 @@
+// ====== Header / Hero: contenedor fluido a escala del diseño ======
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  container-type: inline-size;
+  container-name: hero;
+  aspect-ratio: 1920 / 1080;
+  background-color: $dark;
+}
+
+// ====== Anillos decorativos detrás del collage de fotos ======
+.hero__decor {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero__ring {
+  position: absolute;
+  border: 1px solid $ring-color;
+  border-radius: 50%;
+}
+
+.hero__ring--1 {
+  left: fx(971);
+  top: fx(263);
+  width: fx(1102);
+  height: fx(1102);
+}
+
+.hero__ring--2 {
+  left: fx(1217);
+  top: fx(540);
+  width: fx(850);
+  height: fx(850);
+}
+
+// ====== Bloque de texto principal ======
+.hero__content {
+  position: absolute;
+  left: fx(160);
+  top: fx(216);
+  z-index: 2;
+  width: fx(784);
+}
+
+.hero__content h1 {
+  margin: 0;
+  max-width: fx(784);
+  font-family: $font-heading;
+  font-weight: 700;
+  font-size: fx(80);
+  line-height: fx(101);
+  color: $white;
+}
+
+.hero__content p {
+  margin: fx(24) 0 0;
+  max-width: fx(648);
+  font-family: $font-body;
+  font-weight: 400;
+  font-size: fx(24);
+  line-height: fx(40);
+  color: $white;
+  opacity: 0.5;
+}
+
+.hero__cta {
+  display: flex;
+  align-items: center;
+  gap: fx(32);
+  margin-top: fx(32);
+}
+
+.btn {
+  font-family: $font-body;
+  font-size: fx(18);
+  white-space: nowrap;
+}
+
+.btn--primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fx(240);
+  height: fx(60);
+  background-color: $accent;
+  color: $white;
+  border-radius: fx(16);
+  box-shadow: 0 fx(24) fx(50) rgba(0, 0, 0, 0.1);
+  transition: background-color $transition, box-shadow $transition, transform $transition;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $accent-dark;
+    box-shadow: 0 fx(28) fx(56) rgba(0, 0, 0, 0.18);
+    transform: translateY(fx(-2));
+  }
+}
+
+.btn--learn {
+  display: flex;
+  align-items: center;
+  gap: fx(12);
+  height: fx(40);
+  color: $white;
+  font-weight: 600;
+  transition: color $transition;
+
+  span {
+    text-decoration: underline;
+    text-underline-offset: fx(4);
+  }
+
+  img {
+    width: fx(40);
+    height: fx(40);
+    transition: transform $transition;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $accent;
+
+    img {
+      transform: translateX(fx(4));
+    }
+  }
+}

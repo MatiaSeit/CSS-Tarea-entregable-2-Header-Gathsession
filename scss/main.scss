@@ -1,4 +1,6 @@
-@use 'body';
-@use 'header';
-@use 'nav';
-// ...puedes agregar más importaciones si lo necesitas...
+@import 'variable';
+@import 'body';
+@import 'nav';
+@import 'hero';
+@import 'gallery';
+@import 'services';

@@ -1,0 +1,24 @@
+// colores (extraídos del archivo Figma)
+$dark: #2B2D38;
+$accent: #DB2A6B;
+$accent-dark: darken(#DB2A6B, 8%);
+$white: #FFFFFF;
+$gray-nav: #ABABAB;
+$ring-color: rgba(225, 225, 225, 0.25);
+
+// transición estándar para estados hover
+$transition: 0.2s ease;
+
+// tipografías
+$font-heading: 'Merriweather', serif;
+$font-body: 'Poppins', sans-serif;
+
+// ancho de diseño original (Figma, escritorio 1920px)
+$design: 1920;
+
+// convierte un valor en px del diseño a una unidad fluida basada en el
+// ancho del contenedor (cqw), para reproducir el layout de forma
+// proporcionalmente idéntica al diseño en cualquier tamaño de pantalla
+@function fx($px) {
+  @return calc(#{$px} / #{$design} * 100cqw);
+}
