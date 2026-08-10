@@ -1,10 +1,5 @@
 Proyecto de CSS N#2
 Header Gathsession
-📢 ¡Hola a tod@s!
-
-Segunda tarea entregable de CSS. En esta ocasión, desarrollaremos un header-hero para una página web. A continuación, os dejo los requerimientos y el proceso de entrega.
-
-Archivos necesarios para la realización. Es un fichero figma que podrás importar en tu propia cuenta.
 
 📌 Requerimientos
 ✅ Boilerplate: Podéis elegir el que prefiráis como punto de partida.
@@ -15,10 +10,3 @@ Archivos necesarios para la realización. Es un fichero figma que podrás import
 ✅ Semántica: Se valorará no solo la parte visual, sino también la correcta estructura y semántica del código.
 ✅ Fidelidad al diseño: Para aprobar el proyecto, el resultado debe ser lo más parecido posible a la versión estática del PDF.
 ✅ Interactividad: Los elementos interactuables (botones, enlaces, etc.) deben contar con su estado hover.
-📤 Entrega
-📌 Repositorio:
-Debéis crear un repositorio específico para este proyecto.
-Se requerirá el enlace al repositorio para la evaluación.
-📌 Enlace público:
-Subid el proyecto a GitHub Pages o una plataforma similar. Te dejo enlace de la clase donde se explica.
-Se requerirá un enlace público para la corrección.
